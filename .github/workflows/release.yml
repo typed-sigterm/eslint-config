@@ -21,6 +21,6 @@ jobs:
           run_install: true
 
       - run: pnpm build
-      - run: pnpm publish --provenance
+      - run: pnpm publish --provenance --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
