@@ -19,8 +19,8 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            import { prerelease } from 'semver'
-            import { version } from './package.json'
+            const { prerelease } = require('semver')
+            const { version } = require('./package.json')
             return !prerelease(version)
 
       - if: steps.check-stability.outputs.result
@@ -33,15 +33,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: package.json
-
       - uses: pnpm/action-setup@v4
         with:
           run_install: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: package.json
+          cache: pnpm
 
       - run: pnpm build
-      - run: pnpm publish --provenance --no-git-checks
+      - run: npm publish --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
