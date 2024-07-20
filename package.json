@@ -1,0 +1,54 @@
+{
+  "name": "@typed-sigterm/eslint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.5.0",
+  "author": "Typed SIGTERM",
+  "license": "MIT",
+  "homepage": "https://eslint-config.by-ts.top/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typed-sigterm/eslint-config"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "files": [
+    "LICENSE",
+    "dist"
+  ],
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "inspector:build": "eslint-config-inspector build",
+    "lint": "eslint .",
+    "prepare": "husky"
+  },
+  "peerDependencies": {
+    "@antfu/eslint-config": "^2.23.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.23.0",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/types": "^19.0.3",
+    "@eslint-react/eslint-plugin": "^1.5.27",
+    "@eslint/config-inspector": "^0.5.2",
+    "@unocss/eslint-plugin": "^0.61.5",
+    "eslint": "npm:eslint-ts-patch@9.5.0-0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.8",
+    "eslint-plugin-solid": "^0.14.1",
+    "eslint-plugin-svelte": "^2.43.0",
+    "eslint-ts-patch": "9.5.0-0",
+    "husky": "^9.1.1",
+    "svelte": "^4.2.18",
+    "tsup": "^8.2.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}

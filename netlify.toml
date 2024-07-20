@@ -1,0 +1,3 @@
+[build]
+command = "pnpm inspector:build"
+publish = ".eslint-config-inspector"
