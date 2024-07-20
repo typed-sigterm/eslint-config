@@ -32,7 +32,8 @@ if (hmm() === 41) {
 Install the dependency in your project:
 
 ```bash
-pnpm add -D @typed-sigterm/eslint-config
+# @antfu/eslint-config is a peer dependency, so manually installing is required
+pnpm add -D @typed-sigterm/eslint-config @antfu/eslint-config
 ```
 
 And create `eslint.config.mjs` in your project root:
