@@ -8,6 +8,27 @@ permissions:
   id-token: write
 
 jobs:
+  sync-latest-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - id: check-stability
+        uses: actions/github-script@v7
+        with:
+          script: |
+            import { prerelease } from 'semver'
+            import { version } from './package.json'
+            return !prerelease(version)
+
+      - if: steps.check-stability.outputs.result
+        run: |
+          git checkout -b latest origin/latest
+          git merge --ff-only origin/main
+          git push origin latest
+
   release:
     runs-on: ubuntu-latest
     steps:
