@@ -20,7 +20,7 @@ jobs:
           node-version-file: package.json
           cache: pnpm
 
-      - run: pnpm ci
+      - run: pnpm install
       - run: pnpm lint --fix
 
       - uses: autofix-ci/action@v1.3.1
