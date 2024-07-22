@@ -2,15 +2,19 @@ name: autofix.ci # needed to securely identify the workflow
 
 on:
   pull_request:
+    branches-ignore:
+      - latest
+      - renovate/**
   push:
     branches-ignore:
+      - latest
       - renovate/**
 
 permissions:
   contents: read
 
 jobs:
-  autofix:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
