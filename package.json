@@ -3,6 +3,7 @@
   "type": "module",
   "version": "1.0.1",
   "packageManager": "pnpm@9.5.0",
+  "description": "Typed SIGTERM's ESLint config",
   "author": "Typed SIGTERM",
   "license": "MIT",
   "homepage": "https://eslint-config.by-ts.top/",
