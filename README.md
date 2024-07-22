@@ -11,19 +11,25 @@ Correct example:
 ```ts
 import process from 'node:process';
 
-function hmm(): number {
-  if (world)
-    console.error('Why the world is defined?');
-  else
-    console.error('Why the world is not defined?');
-  return 41;
+class YeWenjie {
+  public think() {
+    return new Promise<unknown>((resolve) => {
+      if (globalThis.world)
+        console.error('Why the world is defined?');
+      else
+        console.error('Why the world is undefined?');
+      setTimeout(() => resolve(41), 114514);
+    });
+  }
 }
 
-if (hmm() === 41) {
-  process.exit(0);
-} else {
+const yeWenjie = new YeWenjie();
+
+if (await yeWenjie.think() === 41) {
   console.error('Physics no longer exists!');
   process.exit(1);
+} else {
+  process.exit(0);
 }
 ```
 
