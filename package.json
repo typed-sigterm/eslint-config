@@ -1,7 +1,7 @@
 {
   "name": "@typed-sigterm/eslint-config",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "packageManager": "pnpm@9.6.0",
   "description": "Typed SIGTERM's ESLint config",
   "author": "Typed SIGTERM",
