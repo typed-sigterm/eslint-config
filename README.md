@@ -2,9 +2,10 @@
 
 [![npm](https://img.shields.io/npm/v/@typed-sigterm/eslint-config?color=444&label=)](https://npmjs.com/package/@typed-sigterm/eslint-config) [![code style](https://img.shields.io/badge/Code_Style-Typed_SIGTERM-blue?color=3178C6&labelColor=252525)](https://github.com/typed-sigterm/eslint-config)
 
-- Semi always required
+- Requied semi
 - [1tbs-style](https://eslint.style/rules/js/brace-style#_1tbs) braces
-- ... And anything else from [`@antfu/eslint-config`](https://github.com/antfu/eslint-config)!
+- Max 80 characters per line (some [exceptions](https://eslint.style/rules/default/max-len#options))
+- ... and anything else from [`@antfu/eslint-config`](https://github.com/antfu/eslint-config)!
 
 Correct example:
 
