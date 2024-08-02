@@ -31,7 +31,7 @@
   },
   "scripts": {
     "build": "tsup",
-    "inspector:build": "eslint-config-inspector build",
+    "build:inspector": "eslint-config-inspector build",
     "lint": "eslint .",
     "prepare": "husky"
   },
