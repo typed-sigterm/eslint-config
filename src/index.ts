@@ -16,9 +16,18 @@ const factory: typeof antfu = (options, ...userConfigs) => {
   return antfu(options, {
     name: 'typed-sigterm/stylistic/rules',
     rules: {
-      'style/max-len': [2],
       'style/brace-style': [2, '1tbs'],
       'style/semi': [2, 'always'],
+    },
+  }, {
+    name: 'typed-sigterm/js-and-ts',
+    files: [
+      '**/*.?([cm])[jt]s',
+      '**/*.?([cm])[jt]sx',
+      '**/*.vue',
+    ],
+    rules: {
+      'style/max-len': [2],
     },
   }, ...userConfigs);
 };
