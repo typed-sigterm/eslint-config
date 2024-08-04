@@ -20,14 +20,27 @@ const factory: typeof antfu = (options, ...userConfigs) => {
       'style/semi': [2, 'always'],
     },
   }, {
-    name: 'typed-sigterm/js-and-ts',
+    name: 'typed-sigterm/line-length',
     files: [
       '**/*.?([cm])[jt]s',
       '**/*.?([cm])[jt]sx',
       '**/*.vue',
+      '**/*.astro',
+      '**/*.svelte',
+      '**/*.css',
+      '**/*.scss',
+      '**/*.sass',
+      '**/*.less',
     ],
     rules: {
-      'style/max-len': [2],
+      'style/max-len': [2, {
+        ignoreComments: false,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: false,
+        ignoreTemplateLiterals: true,
+        ignoreTrailingComments: false,
+        ignoreUrls: true,
+      }],
     },
   }, ...userConfigs);
 };

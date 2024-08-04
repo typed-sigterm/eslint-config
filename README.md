@@ -67,6 +67,25 @@ Now you can run `pnpm lint` to lint your code.
 
 See [documentation of `@antfu/eslint-config`](https://github.com/antfu/eslint-config/blob/main/README.md#vs-code-support-auto-fix-on-save).
 
+## Notes on rules
+
+### Line length limitation
+
+A line should not exceed 80 characters, but there are some exceptions:
+
+- Lines that contain URLs
+- template literals
+- RegExp literals
+
+This rule applies to:
+
+- `*.js` `*.cjs` `*.mjs` `*.jsx`
+- `*.ts` `*.cts` `*.mts` `*.tsx`
+- `*.vue`
+- `*.astro`
+- `*.svelte`
+- `*.css` `*.scss` `*.sass` `*.less`
+
 ## Credits
 
 The project is only a wrapper/modifier of `@antfu/eslint-config`. Thanks to [Anthony Fu](https://antfu.me/) for the great work!
