@@ -4,7 +4,6 @@
 
 - Requies semi
 - [1tbs-style](https://eslint.style/rules/js/brace-style#_1tbs) braces
-- Max 80 characters per line (some [exceptions](https://eslint.style/rules/default/max-len#options))
 - ... and anything else from [`@antfu/eslint-config`](https://github.com/antfu/eslint-config)!
 
 Correct example:
@@ -66,25 +65,6 @@ Now you can run `pnpm lint` to lint your code.
 ## VS Code support (auto fix on save)
 
 See [documentation of `@antfu/eslint-config`](https://github.com/antfu/eslint-config/blob/main/README.md#vs-code-support-auto-fix-on-save).
-
-## Notes on rules
-
-### Line length limitation
-
-A line should not exceed 80 characters, but there are some exceptions:
-
-- Lines that contain URLs
-- template literals
-- RegExp literals
-
-This rule applies to:
-
-- `*.js` `*.cjs` `*.mjs` `*.jsx`
-- `*.ts` `*.cts` `*.mts` `*.tsx`
-- `*.vue`
-- `*.astro`
-- `*.svelte`
-- `*.css` `*.scss` `*.sass` `*.less`
 
 ## Credits
 
