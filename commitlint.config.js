@@ -1,4 +1,4 @@
-const types = [ 'build', 'chore', 'ci', 'docs', 'feat', 'fix', 'perf', 'refactor', 'revert', 'style', 'test'];
+const types = ['build', 'chore', 'ci', 'docs', 'feat', 'fix', 'perf', 'refactor', 'revert', 'style', 'test'];
 
 /** @type {import('@commitlint/types').UserConfig} */
 export default {
