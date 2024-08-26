@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0 (2024-08-26)
+
+### 🚀 Features
+
+- Remove line length limitations  
+  The initial consideration for this rule was to standardize the line breaking behavior of Vue template props when they are too long.  
+  But now it has been found that this rule lacks flexibility and is a burden in many popular scenarios, such as tailwindcss. After careful consideration, this rule was ultimately removed.
+
 ## 1.1.1 (2024-08-04)
 
 ### 🩹 Fixes
