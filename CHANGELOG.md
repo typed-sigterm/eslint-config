@@ -4,8 +4,8 @@
 
 ### 🚀 Features
 
-- Remove line length limitations  
-  The initial consideration for this rule was to standardize the line breaking behavior of Vue template props when they are too long.  
+- Remove line length limitations
+  The initial consideration for this rule was to standardize the line breaking behavior of Vue template props when they are too long.
   But now it has been found that this rule lacks flexibility and is a burden in many popular scenarios, such as tailwindcss. After careful consideration, this rule was ultimately removed.
 
 ## 1.1.1 (2024-08-04)
@@ -18,7 +18,7 @@
 
 ### 🚀 Features
 
-- Limit the max length of the line to 80 characters.  
+- Limit the max length of the line to 80 characters.
   The rule applies to JS, TS, JSX, TSX and Vue SFC files. Exceptions:
   - URLs
   - string literals
