@@ -8,10 +8,10 @@
   ],
   "packageRules": [
     {
-      "matchDepTypes": ["devDependencies", "packageManager"],
-      "matchUpdateTypes": ["major", "patch", "minor"],
       "groupName": "dependencies (dev)",
-      "groupSlug": "dev-dependencies"
+      "groupSlug": "dev-dependencies",
+      "matchDepTypes": ["devDependencies", "packageManager"],
+      "matchPackageNames": ["!@antfu/eslint-config"]
     }
   ],
   "separateMajorMinor": false
