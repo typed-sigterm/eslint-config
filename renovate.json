@@ -5,10 +5,13 @@
   ],
   "packageRules": [
     {
-      "matchDepTypes": ["devDependencies"],
+      "matchDepTypes": ["devDependencies", "packageManager"],
       "matchUpdateTypes": ["major", "patch", "minor"],
       "groupName": "dependencies (dev)",
       "groupSlug": "dev-dependencies"
     }
+  ],
+  "ignorePresets": [
+    "group:allNonMajor"
   ]
 }
