@@ -3,6 +3,9 @@
   "extends": [
     "github>typed-sigterm/renovate-config"
   ],
+  "ignorePresets": [
+    "group:allNonMajor"
+  ],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies", "packageManager"],
@@ -11,7 +14,5 @@
       "groupSlug": "dev-dependencies"
     }
   ],
-  "ignorePresets": [
-    "group:allNonMajor"
-  ]
+  "separateMajorMinor": false
 }
