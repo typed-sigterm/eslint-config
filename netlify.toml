@@ -1,6 +1,3 @@
 [build]
 command = "pnpm build:inspector"
 publish = ".eslint-config-inspector"
-
-[build.environment]
-NODE_VERSION = "20"
