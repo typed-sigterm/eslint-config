@@ -16,6 +16,7 @@ const factory: typeof antfu = (options, ...userConfigs) => {
   return antfu(options, {
     name: 'typed-sigterm/stylistic/rules',
     rules: {
+      'one-var': [0],
       'style/brace-style': [2, '1tbs'],
       'style/semi': [2, 'always'],
     },

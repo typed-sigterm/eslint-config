@@ -1,9 +1,10 @@
 # Typed SIGTERM's ESLint Config
 
-[![npm](https://img.shields.io/npm/v/@typed-sigterm/eslint-config?color=444&label=)](https://npmjs.com/package/@typed-sigterm/eslint-config) [![code style](https://img.shields.io/badge/Code_Style-Typed_SIGTERM-blue?color=3178C6&labelColor=252525)](https://github.com/typed-sigterm/eslint-config)
+[![npm](https://img.shields.io/npm/v/@typed-sigterm/eslint-config?color=444)](https://npmjs.com/package/@typed-sigterm/eslint-config) [![code style](https://img.shields.io/badge/Code_Style-Typed_SIGTERM-blue?color=3178C6&labelColor=252525)](https://github.com/typed-sigterm/eslint-config)
 
-- Requies semi
 - [1tbs-style](https://eslint.style/rules/js/brace-style#_1tbs) braces
+- Requies semi
+- Allows declaring multiple variables in a single statement
 - ... and anything else from [`@antfu/eslint-config`](https://github.com/antfu/eslint-config)!
 
 Correct example:
