@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.0 (2024-11-20)
+
+### 🚀 Features
+
+- Allow declaring multiple variables in a single statement
+
 ## 1.3.0 (2024-09-01)
 
 ### 🏡 Chore
