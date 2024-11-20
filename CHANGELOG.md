@@ -22,7 +22,7 @@
 
 ## 1.1.1 (2024-08-04)
 
-### 🩹 Fixes
+### 🩹 Bug Fixes
 
 - Update line length rule (see [README](./README.md#line-length-limitation) for details)
 
@@ -40,7 +40,7 @@
 
 ## 1.0.1 (2024-07-21)
 
-### 🩹 Fixes
+### 🩹 Bug Fixes
 
 - Fix types and exports
 
