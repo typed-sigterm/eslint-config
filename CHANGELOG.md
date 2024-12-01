@@ -8,7 +8,7 @@
 
 ## 1.3.0 (2024-09-01)
 
-### 🏡 Chore
+### 🏡 Other Changes
 
 - Update dependency `@antfu/eslint-config` to v3
 
