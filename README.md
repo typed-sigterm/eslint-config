@@ -1,6 +1,6 @@
 # Typed SIGTERM's ESLint Config
 
-[![npm](https://img.shields.io/npm/v/@typed-sigterm/eslint-config?color=444)](https://npmjs.com/package/@typed-sigterm/eslint-config) [![code style](https://img.shields.io/badge/Code_Style-Typed_SIGTERM-blue?color=3178C6&labelColor=252525)](https://github.com/typed-sigterm/eslint-config)
+[![npm](https://img.shields.io/npm/v/@typed-sigterm/eslint-config?color=444&logo=npm&label=)](https://npmjs.com/package/@typed-sigterm/eslint-config) [![code style](https://img.shields.io/badge/Code_Style-Typed_SIGTERM-blue?color=3178C6&labelColor=252525)](https://github.com/typed-sigterm/eslint-config)
 
 - [1tbs-style](https://eslint.style/rules/js/brace-style#_1tbs) braces
 - Requies semi
@@ -40,7 +40,7 @@ Install the dependency in your project:
 
 ```bash
 # @antfu/eslint-config is a peer dependency, so manually installing is required
-pnpm add -D @typed-sigterm/eslint-config @antfu/eslint-config
+npm add -D @typed-sigterm/eslint-config @antfu/eslint-config
 ```
 
 And create `eslint.config.mjs` in your project root:

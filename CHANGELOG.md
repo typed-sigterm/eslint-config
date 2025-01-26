@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.1 (2025-01-27)
+
+### 🏡 Other Changes
+
+- relax peer `@antfu/eslint-config` version restrictions, from `^3.0.0` to `>= 3.0.0`
+
 ## 1.4.0 (2024-11-20)
 
 ### 🚀 Features
