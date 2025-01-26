@@ -61,7 +61,7 @@ Add script for `package.json`:
 }
 ```
 
-Now you can run `pnpm lint` to lint your code.
+Now you can run `npm run lint` to lint your code.
 
 ## VS Code support (auto fix on save)
 
