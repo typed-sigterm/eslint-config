@@ -26,11 +26,15 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "build": "tsup",
     "build:inspector": "eslint-config-inspector build",
     "lint": "eslint . --flag unstable_ts_config",
-    "prepare": "husky"
+    "prepare": "bun run husky"
   },
   "peerDependencies": {
     "@antfu/eslint-config": ">= 3.0.0"

@@ -15,13 +15,11 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           fetch-depth: 0
-      - uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
-      - uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4
+      - uses: oven-sh/setup-bun@4bc047ad259df6fc24a6c9b0f9a0cb08cf17fbe5 # v2
         with:
-          node-version-file: .node-version
-          cache: pnpm
+          bun-version-file: .tool-versions
 
-      - run: pnpm install
+      - run: bun i --frozen-lockfile
 
       - id: check-stability
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7
@@ -41,16 +39,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-      - uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
-      - uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4
+      - uses: oven-sh/setup-bun@4bc047ad259df6fc24a6c9b0f9a0cb08cf17fbe5 # v2
         with:
-          node-version-file: .node-version
-          cache: pnpm
+          bun-version-file: .tool-versions
 
-      - run: pnpm install
-      - run: pnpm build
-
-      - run: npm config set '//registry.npmjs.org/:_authToken' "${NODE_AUTH_TOKEN}"
+      - run: bun i --frozen-lockfile
+      - run: bun run build
+      - run: bun publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-      - run: pnpm publish --provenance --access=public --no-git-checks
+          NPM_CONFIG_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
