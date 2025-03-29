@@ -1,12 +1,10 @@
 {
+  "extends": "@tsconfig/bun/tsconfig.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "baseUrl": ".",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true
+    "allowImportingTsExtensions": false,
+    "declaration": true,
+    "noEmit": false,
+    "outDir": "./dist"
   },
-  "include": ["src"]
+  "include": ["./src"]
 }
