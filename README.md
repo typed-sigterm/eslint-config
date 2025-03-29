@@ -5,6 +5,7 @@
 - [1tbs-style](https://eslint.style/rules/js/brace-style#_1tbs) braces
 - Requies semi
 - Allows declaring multiple variables in a single statement
+- [AutoCorrect](https://github.com/huacnlee/autocorrect) - improve copywriting, correct spaces, words, and punctuations between CJK (Chinese, Japanese, Korean)
 - ... and anything else from [`@antfu/eslint-config`](https://github.com/antfu/eslint-config)!
 
 Correct example:
@@ -12,6 +13,7 @@ Correct example:
 ```ts
 import process from 'node:process';
 
+// Oh it's 叶文洁
 class YeWenjie {
   public think() {
     return new Promise<unknown>((resolve) => {
@@ -36,30 +38,22 @@ if (await yeWenjie.think() === 41) {
 
 ## Usage
 
-Install the dependency in your project:
+1. Install `@typed-sigterm/eslint-config` with your package manager
+2. Install `@antfu/eslint-config` with your package manager
+3. Create `eslint.config.mjs` in your project root:
+    ```js
+    import ts from '@typed-sigterm/eslint-config';
 
-```bash
-# @antfu/eslint-config is a peer dependency, so manually installing is required
-npm add -D @typed-sigterm/eslint-config @antfu/eslint-config
-```
-
-And create `eslint.config.mjs` in your project root:
-
-```js
-import ts from '@typed-sigterm/eslint-config';
-
-export default ts();
-```
-
-Add script for `package.json`:
-
-```json
-{
-  "scripts": {
-    "lint": "eslint ."
-  }
-}
-```
+    export default ts();
+    ```
+4. Add script for `package.json`:
+    ```json
+    {
+      "scripts": {
+        "lint": "eslint ."
+      }
+    }
+    ```
 
 Now you can run `npm run lint` to lint your code.
 
@@ -69,4 +63,4 @@ See [documentation of `@antfu/eslint-config`](https://github.com/antfu/eslint-co
 
 ## Credits
 
-The project is only a wrapper/modifier of `@antfu/eslint-config`. Thanks to [Anthony Fu](https://antfu.me/) for the great work!
+The project is a wrapper of `@antfu/eslint-config`. Thanks to [Anthony Fu](https://antfu.me/) for the great work!
