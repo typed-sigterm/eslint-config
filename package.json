@@ -31,7 +31,7 @@
     "@antfu/eslint-config": ">= 4.0.0"
   },
   "dependencies": {
-    "eslint-plugin-autocorrect": "^0.2.0",
+    "eslint-plugin-autocorrect": "^0.3.0",
     "type-fest": "^4.41.0"
   },
   "devDependencies": {
