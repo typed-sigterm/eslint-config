@@ -36,6 +36,8 @@ if (await yeWenjie.think() === 41) {
 }
 ```
 
+You can view all details at [Config Inspector](https://eslint-config.by-ts.top).
+
 ## Usage
 
 1. Install `@typed-sigterm/eslint-config` with your package manager
