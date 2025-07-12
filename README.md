@@ -5,6 +5,7 @@
 - [1tbs-style](https://eslint.style/rules/js/brace-style#_1tbs) braces
 - Requies semi
 - Allows declaring multiple variables in a single statement
+- Allows type and value identifiers to share the same name
 - [AutoCorrect](https://github.com/huacnlee/autocorrect) - improve copywriting, correct spaces, words, and punctuations between CJK (Chinese, Japanese, Korean)
 - ... and anything else from [`@antfu/eslint-config`](https://github.com/antfu/eslint-config)!
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.0 (2025-07-13)
+
+### 🚀 Features
+
+- Allows type and value identifiers to share the same name
+
 ## 1.4.1 (2025-01-27)
 
 ### 🏡 Other Changes
