@@ -47,4 +47,4 @@ jobs:
       - run: bun run build
       - run: bunx npm publish
         env:
-          NPM_CONFIG_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+          NPM_ACCESS_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
