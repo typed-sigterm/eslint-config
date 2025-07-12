@@ -19,7 +19,7 @@ jobs:
         with:
           bun-version-file: .tool-versions
 
-      - run: bun i --frozen-lockfile
+      - run: bun i
 
       - id: check-stability
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7
@@ -37,14 +37,14 @@ jobs:
 
   release:
     runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       - uses: oven-sh/setup-bun@735343b667d3e6f658f44d0eca948eb6282f2b76 # v2
         with:
           bun-version-file: .tool-versions
 
-      - run: bun i --frozen-lockfile
+      - run: bun i
       - run: bun run build
       - run: bunx npm publish
-        env:
-          NPM_ACCESS_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
