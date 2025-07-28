@@ -25,17 +25,7 @@ type Factory = SetParameterType<typeof antfu, {
 const factory: Factory = (options, ...userConfigs) => {
   const configs: Array<Parameters<typeof antfu>[1]> = [];
 
-  configs.push({
-    name: 'typed-sigterm/javascript/rules',
-    rules: {
-      'no-redeclare': [2],
-    },
-  }, {
-    name: 'typed-sigterm/typescript/rules',
-    rules: {
-      'ts/no-redeclare': [0],
-    },
-  }, {
+  configs.push({ {
     name: 'typed-sigterm/stylistic/rules',
     rules: {
       'one-var': [0],
