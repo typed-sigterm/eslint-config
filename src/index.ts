@@ -25,7 +25,7 @@ type Factory = SetParameterType<typeof antfu, {
 const factory: Factory = (options, ...userConfigs) => {
   const configs: Array<Parameters<typeof antfu>[1]> = [];
 
-  configs.push({ {
+  configs.push({
     name: 'typed-sigterm/stylistic/rules',
     rules: {
       'one-var': [0],
