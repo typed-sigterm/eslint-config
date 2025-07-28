@@ -14,7 +14,7 @@ jobs:
         with:
           bun-version-file: .tool-versions
 
-      - run: bun i --frozen-lockfile
+      - run: bun ci
       - run: bun run lint --fix
 
       - uses: autofix-ci/action@635ffb0c9798bd160680f18fd73371e355b85f27 # v1.3.2
