@@ -1,7 +1,7 @@
 {
   "name": "@typed-sigterm/eslint-config",
   "type": "module",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Typed SIGTERM's ESLint config.",
   "author": "Typed SIGTERM",
   "license": "MIT",

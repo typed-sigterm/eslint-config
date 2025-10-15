@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.1 (2025-10-15)
+
+### 🏡 Other Changes
+
+- Bundle `type-fest` types
+
 ## 1.6.0 (2025-07-29)
 
 This release reverts changes in v1.5.0, because they don't work. Track on [#11](https://github.com/typed-sigterm/eslint-config/issues/11).
