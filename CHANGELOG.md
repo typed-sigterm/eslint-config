@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.0 (2026-02-14)
+
+### 🚀 Features
+
+- Allows JSDoc `@property` `@returns` to be without description
+
 ## 1.6.1 (2025-10-15)
 
 ### 🏡 Other Changes

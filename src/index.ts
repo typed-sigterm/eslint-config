@@ -1,17 +1,22 @@
-import type { SetParameterType } from 'type-fest';
 import antfu from '@antfu/eslint-config';
 import autocorrect from 'eslint-plugin-autocorrect';
 
-type Factory = SetParameterType<typeof antfu, {
-  0: Parameters<typeof antfu>[0] & {
+type AntfuOptions = NonNullable<Parameters<typeof antfu>[0]>;
+type AntfuUserConfig = Parameters<typeof antfu> extends [options?: infer _Options, ...userConfigs: infer UserConfigs]
+  ? UserConfigs[number]
+  : never;
+
+type Factory = (
+  options?: AntfuOptions & {
     /**
      * Enable AutoCorrect support.
      *
      * @default true
      */
     autocorrect?: boolean
-  }
-}>;
+  },
+  ...userConfigs: AntfuUserConfig[]
+) => ReturnType<typeof antfu>;
 
 /**
  * Construct an array of ESLint flat config items.
@@ -23,9 +28,15 @@ type Factory = SetParameterType<typeof antfu, {
  * @returns The merged ESLint configurations.
  */
 const factory: Factory = (options, ...userConfigs) => {
-  const configs: Array<Parameters<typeof antfu>[1]> = [];
+  const configs: AntfuUserConfig[] = [];
 
   configs.push({
+    name: 'typed-sigterm/jsdoc/rules',
+    rules: {
+      'jsdoc/require-property-description': [0],
+      'jsdoc/require-returns-description': [0],
+    },
+  }, {
     name: 'typed-sigterm/stylistic/rules',
     rules: {
       'one-var': [0],
@@ -48,7 +59,7 @@ const factory: Factory = (options, ...userConfigs) => {
     });
   }
 
-  return antfu(options, ...configs, ...userConfigs);
+  return antfu(options ?? {}, ...configs, ...userConfigs);
 };
 
 export default factory;

@@ -1,11 +1,13 @@
 # Typed SIGTERM's ESLint Config ![Latest version](https://img.shields.io/github/v/release/typed-sigterm/eslint-config) ![License](https://img.shields.io/github/license/typed-sigterm/ex-matcher) ![OSS Lifecycle](https://img.shields.io/osslifecycle?file_url=https%3A%2F%2Fraw.githubusercontent.com%2Ftyped-sigterm%2Fex-matcher%2Fmain%2FOSSMETADATA) [![GitHub Stars](https://img.shields.io/github/stars/typed-sigterm/ex-matcher)](https://github.com/typed-sigterm/ex-matcher)
 
+Anything from [`@antfu/eslint-config`](https://github.com/antfu/eslint-config) except:
+
 - [1tbs-style](https://eslint.style/rules/js/brace-style#_1tbs) braces
-- Requies semi
+- Requires semi
 - Allows declaring multiple variables in a single statement
 - Allows type and value identifiers to share the same name
+- Allows JSDoc `@property` `@returns` to be without description
 - [AutoCorrect](https://github.com/huacnlee/autocorrect) - improve copywriting, correct spaces, words, and punctuations between CJK (Chinese, Japanese, Korean)
-- ... and anything else from [`@antfu/eslint-config`](https://github.com/antfu/eslint-config)!
 
 Correct example:
 
