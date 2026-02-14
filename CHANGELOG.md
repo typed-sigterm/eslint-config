@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.1 (2026-02-14)
+
+### 🩹 Bug Fixes
+
+- Fix importing
+
 ## 1.7.0 (2026-02-14)
 
 ### 🚀 Features

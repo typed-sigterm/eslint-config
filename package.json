@@ -1,7 +1,7 @@
 {
   "name": "@typed-sigterm/eslint-config",
   "type": "module",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Typed SIGTERM's ESLint config.",
   "author": "Typed SIGTERM",
   "license": "MIT",
@@ -13,8 +13,8 @@
   "keywords": [
     "eslint-config"
   ],
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "files": [
     "dist"
   ],
