@@ -1,4 +1,4 @@
-# Typed SIGTERM's ESLint Config ![Latest version](https://img.shields.io/github/v/release/typed-sigterm/eslint-config) ![License](https://img.shields.io/github/license/typed-sigterm/ex-matcher) ![OSS Lifecycle](https://img.shields.io/osslifecycle?file_url=https%3A%2F%2Fraw.githubusercontent.com%2Ftyped-sigterm%2Fex-matcher%2Fmain%2FOSSMETADATA) [![GitHub Stars](https://img.shields.io/github/stars/typed-sigterm/ex-matcher)](https://github.com/typed-sigterm/ex-matcher)
+# Typed SIGTERM's ESLint Config ![Latest version](https://img.shields.io/github/v/release/typed-sigterm/eslint-config) ![License](https://img.shields.io/github/license/typed-sigterm/eslint-config) ![OSS Lifecycle](https://img.shields.io/osslifecycle?file_url=https%3A%2F%2Fraw.githubusercontent.com%2Ftyped-sigterm%2Feslint-config%2Fmain%2FOSSMETADATA) [![GitHub Stars](https://img.shields.io/github/stars/typed-sigterm/eslint-config)](https://github.com/typed-sigterm/eslint-config)
 
 Anything from [`@antfu/eslint-config`](https://github.com/antfu/eslint-config) except:
 
