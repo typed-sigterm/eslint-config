@@ -1,4 +1,5 @@
 import antfu from '@antfu/eslint-config';
+import convex from '@convex-dev/eslint-plugin';
 import autocorrect from 'eslint-plugin-autocorrect';
 
 type AntfuOptions = NonNullable<Parameters<typeof antfu>[0]>;
@@ -14,6 +15,15 @@ type Factory = (
      * @default true
      */
     autocorrect?: boolean
+    /**
+     * Enable Convex support.
+     *
+     * Requires installing:
+     * - `@convex-dev/eslint-plugin`
+     *
+     * @default false
+     */
+    convex?: boolean
   },
   ...userConfigs: AntfuUserConfig[]
 ) => ReturnType<typeof antfu>;
@@ -57,6 +67,10 @@ const factory: Factory = (options, ...userConfigs) => {
         'autocorrect/issue': [2],
       },
     });
+  }
+
+  if (options?.convex) {
+    configs.push(...convex.configs.recommended);
   }
 
   return antfu(options ?? {}, ...configs, ...userConfigs);

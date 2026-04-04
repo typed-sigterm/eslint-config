@@ -28,27 +28,37 @@
     "lint": "eslint ."
   },
   "peerDependencies": {
-    "@antfu/eslint-config": ">= 4.0.0"
+    "@antfu/eslint-config": ">= 4.0.0",
+    "@convex-dev/eslint-plugin": "^1.2.2"
+  },
+  "peerDependenciesMeta": {
+    "@convex-dev/eslint-plugin": {
+      "optional": true
+    }
   },
   "dependencies": {
     "eslint-plugin-autocorrect": "^0.3.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.4.3",
-    "@commitlint/cli": "^20.4.1",
-    "@commitlint/config-conventional": "^20.4.1",
-    "@commitlint/types": "^20.4.0",
-    "@eslint-react/eslint-plugin": "^2.12.4",
-    "@eslint/config-inspector": "^1.4.2",
+    "@antfu/eslint-config": "^8.0.0",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@commitlint/types": "^20.5.0",
+    "@convex-dev/eslint-plugin": "^1.2.2",
+    "@eslint-react/eslint-plugin": "^4.2.3",
+    "@eslint/config-inspector": "^1.5.0",
     "@tsconfig/bun": "^1.0.10",
-    "@unocss/eslint-plugin": "^66.6.0",
-    "eslint": "^9.39.2",
+    "@unocss/eslint-plugin": "^66.6.7",
+    "eslint": "^10.2.0",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.5.0",
+    "eslint-plugin-react-refresh": "^0.5.2",
     "husky": "^9.1.7",
     "semver": "^7.7.4",
-    "svelte": "^5.51.0",
-    "tsdown": "^0.20.3",
-    "typescript": "^5.9.3"
+    "svelte": "^5.55.1",
+    "tsdown": "^0.21.7",
+    "typescript": "^6.0.2"
+  },
+  "patchedDependencies": {
+    "@eslint/config-inspector@1.5.0": "patches/@eslint%2Fconfig-inspector@1.5.0.patch"
   }
 }

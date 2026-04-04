@@ -3,6 +3,7 @@ import ts from './src';
 // enable my stack, for inspector
 export default ts({
   autocorrect: true,
+  convex: true,
   gitignore: true,
   imports: true,
   jsdoc: true,
