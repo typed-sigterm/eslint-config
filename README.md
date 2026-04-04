@@ -22,7 +22,7 @@ class YeWenjie {
         console.error('Why the world is defined?');
       else
         console.error('Why the world is undefined?');
-      setTimeout(() => resolve(41), 114514);
+      setTimeout(resolve, 114514, 41);
     });
   }
 }
