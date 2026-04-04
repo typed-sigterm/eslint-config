@@ -45,7 +45,7 @@
     "@commitlint/config-conventional": "^20.5.0",
     "@commitlint/types": "^20.5.0",
     "@convex-dev/eslint-plugin": "^1.2.2",
-    "@eslint-react/eslint-plugin": "^4.2.3",
+    "@eslint-react/eslint-plugin": "^3.0.0",
     "@eslint/config-inspector": "^1.5.0",
     "@tsconfig/bun": "^1.0.10",
     "@unocss/eslint-plugin": "^66.6.7",
@@ -57,8 +57,5 @@
     "svelte": "^5.55.1",
     "tsdown": "^0.21.7",
     "typescript": "^6.0.2"
-  },
-  "patchedDependencies": {
-    "@eslint/config-inspector@1.5.0": "patches/@eslint%2Fconfig-inspector@1.5.0.patch"
   }
 }
